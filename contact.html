@@ -8,7 +8,7 @@
 <body>
     <header>
         <ul class="inlineLayout">
-            <li><h1>About Me</h1></li>
+            <li><h1>Contact Me!</h1></li>
             <li><img src="images/headshot_profile.jpg" style="border-radius: 50%"></li>
         </ul>
         <hr>
@@ -22,22 +22,40 @@
     </nav>
     <main>
         <article>
+            
+            <!-- one section to nest a form for contact input -->
             <section>
                 
+                <form action="">
+                
+                    <p>Name: </p>
+                    <input type="text" name="name">
+                    <br>
+                    
+                    <p>School: </p>
+                    <input type="text" name="school">
+                    <br>
+                    
+                    <p>Email: </p>
+                    <input type="email" name="email">
+                    <br>
+                    
+                    <!-- submit button -->
+                    <br>
+                    <input type="submit" value="Submit">
+                
+                </form>
             
             </section>
-            
-            <section>
-            
-            </section>
-            
-            <section>
-            
-            </section>
+
         </article>
         
         <!-- holds the button for github home -->
         <aside>
+            
+            <p>Visit GitHub Today!</p>
+            <!-- input with nested img coupled with javascript to redirect to github.com -->
+            <input type="image" src="images/GitHub_Logo.png" onclick="location.href='https://github.com';" style="width: 20%; height: 10%">
         
         </aside>
     
