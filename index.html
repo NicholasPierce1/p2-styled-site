@@ -7,46 +7,91 @@
 </head>
 <body>
     <header>
-        <ol class="inlineLayout">
+        <ul class="inlineLayout">
             <li><h1>About Me</h1></li>
-            <li><img src="images/headshot_profile.jpg"></li>
-        </ol>
+            <li><img src="images/headshot_profile.jpg" style="border-radius: 50%"></li>
+        </ul>
         <hr>
     </header>
     <nav>
-        <ol class="inlineLayout">
+        <ul class="inlineLayout">
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact Me</a></li>
             <li><a href="rechanged_contact.html">Update Info</a></li>
-        </ol>
+        </ul>
     </nav>
     <main>
         <article>
+            
+            <!-- Why northwest section -->
             <section>
+                <h2>Why Northwest?</h2>
+                <p>Short Answer- This place is home to me!<br>I loved the atmosphere the first moment I came here!
+                My family lives nearby, and some of them are already attending. Northwest's advocation of camaraderie meant a lot to me.
+                    There is always something to do and someone new to meet! That's why I chose Northwest. Go Bearcats!
+                </p>
+            
+            </section>
                 
+            <!-- Favorite hobbies -->
+            <section>
+                <h2>Favorite Hobbies</h2>
+                <ol>
+                    <li>Sleeping</li>
+                    <li>Lifting</li>
+                    <li>Hanging With Friends</li>
+                    <li>Procastinating</li>
+                </ol>
             
             </section>
             
+            <!-- Favorite languages in a tabular display -->
             <section>
-            
-            </section>
-            
-            <section>
-            
+                <table>
+                    <tr>
+                        <th>Favorite Langauages</th>
+                    </tr>
+                    <tr>
+                        <td>Language:</td>
+                        <td>Purpose:</td>
+                    </tr>
+                    <tr>
+                        <td>C#-ASP.NET </td>
+                        <td>Rendering websites to be hosted on Azure. Cross-compatibility offered.</td>
+                    </tr>
+                    <tr>
+                        <td>Java- AndroidOS</td>
+                        <td>Rendering Android, native applications.</td>
+                    </tr>
+                </table>
+                
+                <br>
+                
+                <!-- incorporates youtube vid on html basics via an iframe window
+                Note: html attributes on window port
+                -->
+                <!-- NOTE: embedding permission bypass answered here: https://stackoverflow.com/questions/25661182/embed-youtube-video-refused-to-display-in-a-frame-because-it-set-x-frame-opti -->
+                <iframe width="500" height="300"
+                    src="https://www.youtube.com/embed/UB1O30fR-EE">
+                </iframe>
             </section>
         </article>
         
         <!-- holds the button for github home -->
         <aside>
+            
+            <p>Visit GitHub Today!</p>
+            <!-- input with nested img coupled with javascript to redirect to github.com -->
+            <input type="image" src="images/GitHub_Logo.png" onclick="location.href='https://github.com';" style="width: 20%; height: 10%">
         
         </aside>
     
     </main>
     <footer>
-        <ol class="inlineLayout">
+        <ul class="inlineLayout">
             <li><p>&copy;Nick Pierce - All Rights Reserved</p></li>
             <li><img src="images/background_photo.jpg"></li>
-        </ol>
+        </ul>
     </footer>
 </body>
 </html>
