@@ -59,3 +59,7 @@ nav, hr, article {
 table, td, th{
     border:thin solid black;
 }
+
+small{
+    font-style: italic;
+}

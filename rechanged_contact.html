@@ -8,7 +8,7 @@
 <body id="abbreviateViewPort">
     <header>
         <ul class="inlineLayout">
-            <li><h1>About Me</h1></li>
+            <li><h1>Calculate Volume</h1></li>
             <li><img src="images/headshot_profile.jpg" style="border-radius: 50%" height="25%" width="25%"></li>
         </ul>
         <hr>
@@ -23,38 +23,29 @@
     <main>
         <article>
             
-            <!--  embedded with a form for email, user lookup -->
-            <section>
-                
-                <h2>Find Your Account:</h2>
-                
-                <form action="">
-                    <p>Enter your email here: </p>
-                    <input type="email" name="email">
-                    
-                    <!-- submit button to hide after success reload/user query -->
-                    <input type="submit" value="Find User">
-                </form>
-            
-            </section>
             
             <!-- displays conditional user-account conglomerated into a form -->
             <section>
                 
-                <h2>Modify Your Recovered Account: </h2>
+                <h2>Calculate Volume: </h2>
             
                 <!-- input is hidden until first half is processed -->
                 <form class="modifyStateInputs">
                     
-                    <p>Name: </p>
-                    <input type="text" name="name">
+                    <p>Height: </p>
+                    <input type="text" name="height">
                     <br>
                     
-                    <p>School</p>
-                    <input type="text" name="name">
+                    <p>Width:</p>
+                    <input type="text" name="width">
                     <br>
                     
-                    <input type="submit" value="Update Info">
+                    <p>Length:</p>
+                    <input type="text" name="length">
+                    <br>
+                    <br>
+                    
+                    <input type="submit" value="Calculate">
                     
                 </form>
             
@@ -84,7 +75,7 @@
         <hr>
         <ul>
             <li class="inlineLayout footer"><p>&copy;Nick Pierce - All Rights Reserved</p></li>
-            <li class="inlineLayout footer"><img src="images/background_photo.jpg" height="15%" width="15%"></li>
+            <li class="inlineLayout footer"><img src="images/background_photo.jpg" height="15%" width="15%"><small><br>(Photo Credits To Author Of Site)</small></li>
         </ul>
     </footer>
 </body>
