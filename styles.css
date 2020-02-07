@@ -1,0 +1,55 @@
+
+aside button{
+    width: 30%;
+}
+
+footer{
+    clear: both;
+}
+
+.floatRight{
+    float: right;
+    margin: 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.clear{
+    clear: right;
+}
+
+#abbreviateViewPort{
+    background-color: coral;
+}
+
+#tableLayout{
+    background-color: firebrick;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li a, ul li{
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+
+ul li{
+    padding: 10px;
+}
+
+ul{
+    display: block;
+}
+
+nav, hr, article {
+    clear: both;
+}
+
+.footer{
+    display: inline;
+}

@@ -3,13 +3,13 @@
 <head>
     <title>Nick's Website</title>
     <meta charset="utf-8">
-    
+    <link rel="stylesheet" href="styles.css" text="style/css">
 </head>
-<body>
+<body id="abbreviateViewPort">
     <header>
         <ul class="inlineLayout">
             <li><h1>About Me</h1></li>
-            <li><img src="images/headshot_profile.jpg" style="border-radius: 50%"></li>
+            <li><img src="images/headshot_profile.jpg" style="border-radius: 50%" height="10%" width="10%"></li>
         </ul>
         <hr>
     </header>
@@ -31,7 +31,7 @@
                     <input type="email" name="email">
                     
                     <!-- submit button to hide after success reload/user query -->
-                    <input type="submit" value"find user">
+                    <input type="submit" value="Find User">
                 </form>
             
             </section>
@@ -50,7 +50,7 @@
                     <input type="text" name="name">
                     <br>
                     
-                    <input type="submit" value="update info">
+                    <input type="submit" value="Update Info">
                     
                 </form>
             
@@ -58,20 +58,21 @@
 
         </article>
         
-        <!-- holds the button for github home -->
+       <!-- holds the button for github home -->
         <aside>
             
-            <p>Visit GitHub Today!</p>
+            <p class="floatRight bold">Visit GitHub Today!</p>
             <!-- input with nested img coupled with javascript to redirect to github.com -->
-            <input type="image" src="images/GitHub_Logo.png" onclick="location.href='https://github.com';" style="width: 20%; height: 10%">
+            <button class="floatRight clear"><input type="image" src="images/GitHub_Logo.png" onclick="location.href='https://github.com';" style="width: 10%; height: 10%"></button>
         
         </aside>
     
     </main>
     <footer>
-        <ul class="inlineLayout">
-            <li><p>&copy;Nick Pierce - All Rights Reserved</p></li>
-            <li><img src="images/background_photo.jpg"></li>
+        <hr>
+        <ul>
+            <li class="inlineLayout footer"><p>&copy;Nick Pierce - All Rights Reserved</p></li>
+            <li class="inlineLayout footer"><img src="images/background_photo.jpg" height="15%" width="15%"></li>
         </ul>
     </footer>
 </body>
