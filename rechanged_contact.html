@@ -22,18 +22,40 @@
     </nav>
     <main>
         <article>
+            
+            <!--  embedded with a form for email, user lookup -->
             <section>
                 
+                <form action="">
+                    <p>Enter your email here: </p>
+                    <input type="email" name="email">
+                    
+                    <!-- submit button to hide after success reload/user query -->
+                    <input type="submit" value"find user">
+                </form>
             
             </section>
             
+            <!-- displays conditional user-account conglomerated into a form -->
             <section>
             
-            </section>
+                <!-- input is hidden until first half is processed -->
+                <form class="modifyStateInputs">
+                    
+                    <p>Name: </p>
+                    <input type="text" name="name">
+                    <br>
+                    
+                    <p>School</p>
+                    <input type="text" name="name">
+                    <br>
+                    
+                    <input type="submit" value="update info">
+                    
+                </form>
             
-            <section>
-            
             </section>
+
         </article>
         
         <!-- holds the button for github home -->
