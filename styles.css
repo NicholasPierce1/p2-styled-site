@@ -22,6 +22,8 @@ footer{
 
 #abbreviateViewPort{
     background-color: coral;
+    width: 80%;
+    margin: auto;
 }
 
 #tableLayout{
@@ -52,4 +54,8 @@ nav, hr, article {
 
 .footer{
     display: inline;
+}
+
+table, td, th{
+    border:thin solid black;
 }
