@@ -176,6 +176,10 @@ input[type="submit"]{
     margin-bottom: 1em;
 }
 
+input[type="number"]{
+    width: 35%;
+}
+
 form > p{
     padding: 0;
     margin-top: 1em;
@@ -192,4 +196,13 @@ table td{
 
 .rightBorder{
     border-right: thin solid white;
+}
+
+#errorDisplay{
+    color: red;
+    font-weight: bold;
+}
+
+#getJoke, jokeDisplay{
+    margin-bottom: 1em;
 }
