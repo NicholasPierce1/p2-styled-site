@@ -25,6 +25,9 @@ function clearError(){
 // appends an event that increments the local storage of the current sum of the volume
 window.addEventListener("load", async()=>{
     
+    // if code is executing in test file, local obj (domElments' members will be null) then exit process
+    if(!domElements.form){return;}
+    
     // checks if local storage key is not null
     if(window.localStorage.getItem(volumeSumKey)){
         // creates prompt to display current sum to user
@@ -36,8 +39,7 @@ window.addEventListener("load", async()=>{
     }
     
     // sets form to prevent submissions/reloads
-    if(domElements.form){
-    domElements.form.getElementById("form").addEventListener("submit", (event)=>{
+    domElements.form.addEventListener("submit", (event)=>{
         
         // enjoins form to prevent submission
         event.preventDefault();
@@ -47,7 +49,7 @@ window.addEventListener("load", async()=>{
         domElements.length.value = "";
         domElements.width.value = "";
     });
-    }
+    
 })
 
 // checks validity of all input elements and conditionally raises/clear event
@@ -62,7 +64,7 @@ window.document.addEventListener("click", (event)=>{
            // if all input elements within form are valid then calculate volume and clear error text + update local storage
        if(domElements.form.checkValidity()){
            clearError();
-           const volume = calculateVolume();
+           const volume = calculateVolumeFromDom();
            updateLocalStorage(volume);
        }
        else{
@@ -79,7 +81,7 @@ window.document.addEventListener("click", (event)=>{
 });
 
 // calculates volume and displays it as a span & returns volume value
-function calculateVolume(){
+function calculateVolumeFromDom(){
     const volume = parseInt(domElements.height.value) * parseInt(domElements.width.value) * parseInt(domElements.length.value);
     
     domElements.volumeDisplay.innerHTML = `Volume is: ${volume}<br>`;
