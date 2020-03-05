@@ -3,21 +3,32 @@
 <head>
     <title>Nick's Website</title>
     <meta charset="utf-8">
+    
+        <!-- Material Design for Bootstrap fonts and icons -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.11.0/css/mdb.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
-<body id="abbreviateViewPort">
-    <header>
-        <ul class="inlineLayout">
-            <li><h1>Contact Me!</h1></li>
-            <li><img src="images/headshot_profile.jpg" style="border-radius: 50%" height="25%" width="25%"></li>
+<body id="abbreviateViewPort" class="fluid-container">
+    <header class="heightControl">
+        <ul class="inlineLayout row">
+            <li class="col headerRowFlex"><h1>Contact Me!</h1></li>
+            <li class ="col-9 headerRowFlex"><img src="images/headshot_profile.jpg" style="border-radius: 50%" height="25%" width="25%"></li>
         </ul>
         <hr>
     </header>
     <nav>
-        <ul class="inlineLayout">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="volume_calculator.html">Update Info</a></li>
+        <ul class="inlineLayout" id="navList">
+            <li class="rightBorder"><a href="index.html">Home</a></li>
+            <li class="rightBorder"><a href="contact.html">Contact Me</a></li>
+            <li><a href="volume_calculator.html">Volume Calculator</a></li>
         </ul>
     </nav>
     <main>
@@ -53,21 +64,21 @@
         </article>
         
         <!-- holds the button for github home -->
-        <aside>
+        <div class="row rowWidth">
             
             <!-- github -->
             <!-- input with nested img coupled with javascript to redirect to github.com -->
-            <button class="floatRight clear"><input type="image" src="images/GitHub_Logo.png" onclick="location.href='https://github.com';" style="width: 10%; height: 10%"></button>
+            <button class="col-4"><input type="image" src="images/GitHub_Logo.png" onclick="location.href='https://github.com';" ></button>
             
             <!-- facebook -->
             <!-- input with nested img coupled with javascript to redirect to github.com -->
-            <button class="floatRight clear"><a href="https://facebook.com">Visit Facebook Today!</a></button>
+            <button class="col-4"><a href="https://facebook.com">Visit Facebook Today!</a></button>
             
             <!-- linkedin -->
             <!-- input with nested img coupled with javascript to redirect to github.com -->
-            <button class="floatRight clear"><a href="https://linkedin.com">Visit LinkedIn Today!</a></button>
+            <button class="col-4"><a href="https://linkedin.com">Visit LinkedIn Today!</a></button>
         
-        </aside>
+        </div>
     
     </main>
     <footer>
@@ -77,5 +88,14 @@
             <li class="inlineLayout footer"><img src="images/background_photo.jpg" height="15%" width="15%"><small><br>(Photo Credits To Author Of Site)</small></li>
         </ul>
     </footer>
-</body>
+    
+    <!-- JQuery -->
+    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+    <!-- renders custom script -->/body>
 </html>

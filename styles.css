@@ -1,3 +1,26 @@
+/*
+.heightControl{
+    height: 120px;
+}
+
+li > img{
+    width: 25%;
+    height: 35%;
+}
+
+li > h1{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+header > ul {
+    border-bottom: thin solid black;
+    height: 100%;
+    padding-bottom: .5em
+}
+
+
 
 aside button{
     width: 30%;
@@ -37,11 +60,12 @@ ul{
 li a, ul li{
     display: block;
     float: left;
-    overflow: hidden;
+
 }
 
 ul li{
     padding: 10px;
+   
 }
 
 ul{
@@ -62,4 +86,110 @@ table, td, th{
 
 small{
     font-style: italic;
+} */
+header{
+    margin-top: 1.5em;
+}
+ul.inlineLayout.row{
+    height: 150px;
+}
+
+li{
+    height: 100%;
+}
+
+li > img{
+    width: 25%;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+#navList {
+    height: 15%;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: black;
+    flex-grow: 1;
+    text-align: center;
+   
+}
+
+nav ul li a {
+    color: white;
+}
+
+
+.headerRowFlex{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#headerRowFlex > h1{
+    text-align: center;
+}
+
+button{
+    height: 75px;
+    margin-bottom: 1em;
+}
+
+button input{
+    height: 100%;
+    width: 100%;
+}
+
+.rowWidth{
+    height: 15%;
+    margin: auto;
+}
+
+body{
+    width: 90%;
+    margin: auto;
+}
+
+hr{
+    display: none;
+}
+
+footer{
+    border-top: thin solid black;
+}
+
+input[type="submit"]{
+    margin-bottom: 1em;
+}
+
+form > p{
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+footer > ul{
+    margin-top: 1.5em;
+}
+
+table td{
+    padding-right: .5em;
+}
+
+.rightBorder{
+    border-right: thin solid white;
 }
